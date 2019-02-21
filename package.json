@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "gatsby": "^2.1.11",
+    "gatsby-plugin-typescript": "^2.0.8",
     "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react-dom": "^16.8.2",
+    "typescript": "^3.3.3"
   },
   "repository": {
     "type": "git",
