@@ -1,21 +1,26 @@
 {
-  "name": "nihojima",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hawaiiniho.com",
+  "private": true,
+  "description": "The official site of Nihojimamura",
+  "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
-    "build": "parcel ./src/app.js",
-    "pug": "pug index1.pug",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "cbfsss": "^0.3.4"
+    "gatsby": "^2.1.11",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
   },
-  "devDependencies": {
-    "parcel-bundler": "^1.10.3",
-    "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maechabin/hawaiiniho"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
