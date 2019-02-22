@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from './Header';
+import Map from './Map';
 import Footer from './Footer';
 
 interface LayoutProps {
@@ -32,6 +33,7 @@ export default function Layout(props: LayoutProps): JSX.Element {
       <Header />
       {children}
 
+      <Map />
       <Footer />
     </div>
   );
