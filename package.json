@@ -12,8 +12,10 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
+    "@types/radium": "^0.24.2",
     "gatsby": "^2.1.11",
     "gatsby-plugin-typescript": "^2.0.8",
+    "radium": "^0.25.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "typescript": "^3.3.3"
