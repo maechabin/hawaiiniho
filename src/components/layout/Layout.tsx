@@ -29,12 +29,12 @@ export default function Layout(props: LayoutProps): JSX.Element {
   };
 
   return (
-    <div style={style.container}>
+    <>
       <Header />
       {children}
 
       <Map />
       <Footer />
-    </div>
+    </>
   );
 }
