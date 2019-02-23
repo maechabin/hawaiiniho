@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Radium from 'radium';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/layout/Layout';
 
 export default () => {
-  const StyleRoot = Radium.StyleRoot;
   return (
-    <StyleRoot>
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>ハワイ移民資料館「仁保島村（にほじまむら）」- 広島県広島市</title>
@@ -36,6 +34,6 @@ export default () => {
         <h1>Hello world!</h1>
         <main />
       </Layout>
-    </StyleRoot>
+    </>
   );
 };
