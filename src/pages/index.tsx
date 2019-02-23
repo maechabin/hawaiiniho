@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/layout/Layout';
+import Main from '../components/index/Main';
 
 export default () => {
   return (
@@ -32,7 +33,7 @@ export default () => {
       </Helmet>
       <Layout>
         <h1>Hello world!</h1>
-        <main />
+        <Main />
       </Layout>
     </>
   );
