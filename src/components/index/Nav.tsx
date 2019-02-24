@@ -1,7 +1,15 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import { css } from '@emotion/core';
 
 export default function Nav() {
+  const pages = [
+    { name: '資料館について', path: '/about' },
+    { name: '展示物のご紹介', path: '/collection' },
+    { name: 'ご利用案内', path: '/visit' },
+    { name: '当資料館からのお願い', path: '/give' },
+    { name: 'お問い合わせ', path: '/contact' },
+  ];
   const style = {
     nav__ul: {
       padding: 0,
@@ -10,32 +18,33 @@ export default function Nav() {
     },
     nav__li: css`
       box-sizing: border-box;
-      width: calc(100% / 5);
+      width: calc(100% / ${pages.length});
       text-align: center;
       background-color: #d32f2f;
       line-height: 48px;
       list-style-type: none;
     `,
+    nav__li_a: {
+      fontSize: '18px',
+      fontWeight: 'bold',
+      color: '#fff',
+      '&:hover': {
+        textDecoration: 'none',
+      },
+    } as any,
   };
+  const links = pages.map(pages => {
+    return (
+      <li css={style.nav__li}>
+        <Link to={pages.path} css={css(style.nav__li_a)}>
+          {pages.name}
+        </Link>
+      </li>
+    );
+  });
   return (
     <nav className="nav">
-      <ul css={css(style.nav__ul)}>
-        <li css={style.nav__li}>
-          <a href="./about/">資料館について</a>
-        </li>
-        <li css={style.nav__li}>
-          <a href="./collection/">展示物のご紹介</a>
-        </li>
-        <li css={style.nav__li}>
-          <a href="./visit/">ご利用案内</a>
-        </li>
-        <li css={style.nav__li}>
-          <a href="./give/">当資料館からのお願い</a>
-        </li>
-        <li css={style.nav__li}>
-          <a href="./contact/">お問い合わせ</a>
-        </li>
-      </ul>
+      <ul css={css(style.nav__ul)}>{links}</ul>
     </nav>
   );
 }
