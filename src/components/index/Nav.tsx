@@ -15,6 +15,9 @@ export default function Nav() {
       padding: 0,
       margin: 0,
       display: 'flex',
+      '@media (max-width: 800px)': {
+        display: 'block',
+      },
     },
     nav__li: css`
       box-sizing: border-box;
@@ -23,6 +26,10 @@ export default function Nav() {
       background-color: #d32f2f;
       line-height: 48px;
       list-style-type: none;
+      @media (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 2px;
+      }
     `,
     nav__li_a: {
       fontSize: '18px',
@@ -35,7 +42,7 @@ export default function Nav() {
   };
   const links = pages.map(pages => {
     return (
-      <li css={style.nav__li}>
+      <li css={style.nav__li} key={pages.path}>
         <Link to={pages.path} css={css(style.nav__li_a)}>
           {pages.name}
         </Link>
