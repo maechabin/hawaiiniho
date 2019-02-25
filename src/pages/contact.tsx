@@ -1,9 +1,17 @@
 import * as React from 'react';
+import Layout from '../components/layout/Layout';
+import Breadcrumb from '../components/layout/Breadcrumb';
+import Main from '../components/contact/Main';
+import Helmet from '../components/contact/Helmet';
 
 export default () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
+    <>
+      <Helmet />
+      <Layout>
+        <Breadcrumb title="お問い合わせ" />
+        <Main />
+      </Layout>
+    </>
   );
 };
