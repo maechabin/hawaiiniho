@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 export default function Footer() {
   const style = {
@@ -17,14 +18,14 @@ export default function Footer() {
     <footer style={style.footer}>
       <address style={style.copy}>
         &copy; 1997-2019
-        <a href="/" style={{ color: '#fff' }}>
+        <Link to="/" style={{ color: '#fff', marginLeft: '8px' }}>
           <img
             style={{ verticalAlign: 'top' }}
             src="/images/nihojimamura_logo.png"
             width="72"
             alt="仁保島村（にほじまむら / Nihojimamura）"
           />
-        </a>
+        </Link>
         .
       </address>
     </footer>

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import { withPrefix } from 'gatsby';
 
 export default function Header() {
@@ -21,19 +22,24 @@ export default function Header() {
       fontWeight: 'normal',
       marginLeft: '16px',
     } as React.CSSProperties,
+    logo: {
+      marginLeft: '8px',
+    } as React.CSSProperties,
   };
   return (
     <header style={style.header}>
       <h1 style={style.title}>
-        <a href="/" style={style.title__a}>
+        <Link to="/" style={style.title__a}>
           ハワイ移民資料館
-          <img
-            src={withPrefix('/images/nihojimamura_logo.png')}
-            style={{ verticalAlign: 'middle' }}
-            width="120"
-            alt="仁保島村（にほじまむら）- nihojimamura"
-          />
-        </a>
+          <span style={style.logo}>
+            <img
+              src={withPrefix('/images/nihojimamura_logo.png')}
+              style={{ verticalAlign: 'middle' }}
+              width="120"
+              alt="仁保島村（にほじまむら）- nihojimamura"
+            />
+          </span>
+        </Link>
       </h1>
     </header>
   );
