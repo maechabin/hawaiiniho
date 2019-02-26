@@ -1,9 +1,15 @@
 import * as React from 'react';
 import Nav from './Nav';
+import 'jquery';
 
 export default function Main() {
   const style = {
     slideShow: {
+      textAlign: 'center',
+      height: '440px',
+      position: 'relative',
+    } as React.CSSProperties,
+    title: {
       backgroundColor: 'rgba(255, 255, 255, 0.6)',
       width: '100%',
       height: '100%',
@@ -25,32 +31,34 @@ export default function Main() {
       margin: '0 auto',
     } as React.CSSProperties,
   };
-  React.useEffect(() => {
-    // Update the document title using the browser API
-    ($('.cb-fsss') as any).cbFullScreenSlideShow({
-      top: '0px',
-      height: '440px',
-      zindex: '100',
-      img: [
-        {
-          src: '/images/hawaiiniho2.jpg',
-        },
-        {
-          src: '/images/hawaiiniho4.jpg',
-        },
-        {
-          src: '/images/hawaiiniho3.jpg',
-        },
-        {
-          src: '/images/hawaiiniho1.jpg',
-        },
-      ],
-    });
-  });
+  const el = React.useRef(null);
+  // React.useEffect(() => {
+  //   setTimeout(() => {
+  //     ($('.cb-fsss') as any).cbFullScreenSlideShow({
+  //       top: '0px',
+  //       height: '440px',
+  //       zindex: '100',
+  //       img: [
+  //         {
+  //           src: '/images/hawaiiniho2.jpg',
+  //         },
+  //         {
+  //           src: '/images/hawaiiniho4.jpg',
+  //         },
+  //         {
+  //           src: '/images/hawaiiniho3.jpg',
+  //         },
+  //         {
+  //           src: '/images/hawaiiniho1.jpg',
+  //         },
+  //       ],
+  //     });
+  //   }, 500);
+  // });
   return (
     <>
-      <div className="cb-fsss" style={{ textAlign: 'center' }}>
-        <div style={style.slideShow}>
+      <div className="cb-fsss" ref={el} style={style.slideShow}>
+        <div style={style.title}>
           <h2>
             <img
               src="/images/nihojimamura.png"

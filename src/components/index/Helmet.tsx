@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { STYLE } from '../common/constant';
 import { withPrefix } from 'gatsby';
-import * as $ from 'jquery';
 
 export default () => {
   return (
@@ -25,25 +24,25 @@ export default () => {
         <script src="/js/cb-fsss.min.js" />
         <script>
           {`
-          // window.addEventListener('load', function () {
-          //   $(".cb-fsss").cbFullScreenSlideShow({
-          //     top: '0px',
-          //     height: '440px',
-          //     zindex: '100',
-          //     img: [{
-          //       src: "/images/hawaiiniho2.jpg",
-          //     },
-          //     {
-          //       src: "/images/hawaiiniho4.jpg"
-          //     },
-          //     {
-          //       src: "/images/hawaiiniho3.jpg"
-          //     },
-          //     {
-          //       src: "/images/hawaiiniho1.jpg"
-          //     }]
-          //   });
-          // });
+          window.addEventListener('load', function () {
+            $(".cb-fsss").cbFullScreenSlideShow({
+              top: '0px',
+              height: '440px',
+              zindex: '100',
+              img: [{
+                src: "/images/hawaiiniho2.jpg",
+              },
+              {
+                src: "/images/hawaiiniho4.jpg"
+              },
+              {
+                src: "/images/hawaiiniho3.jpg"
+              },
+              {
+                src: "/images/hawaiiniho1.jpg"
+              }]
+            });
+          });
         `}
         </script>
       </Helmet>
