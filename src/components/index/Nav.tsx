@@ -24,7 +24,7 @@ export default function Nav() {
       width: calc(100% / ${pages.length});
       text-align: center;
       background-color: #d32f2f;
-      line-height: 48px;
+      padding: 16px;
       list-style-type: none;
       @media (max-width: 800px) {
         width: 100%;
@@ -32,7 +32,7 @@ export default function Nav() {
       }
     `,
     nav__li_a: {
-      fontSize: '18px',
+      fontSize: '20px',
       fontWeight: 'bold',
       color: '#fff',
       '&:hover': {

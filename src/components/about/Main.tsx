@@ -3,13 +3,14 @@ import * as React from 'react';
 export default function Main() {
   const style = {
     main: {
-      marin: 0,
+      margin: '40px 0',
     } as React.CSSProperties,
     chapter: {
       padding: '16px 32px',
     } as React.CSSProperties,
     title: {
-      fontSize: '32px',
+      margin: '0',
+      fontSize: '40px',
       textAlign: 'center',
     } as React.CSSProperties,
     paragraph: {

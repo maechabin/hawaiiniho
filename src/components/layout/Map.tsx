@@ -19,10 +19,31 @@ export default function Map() {
       },
     },
     map__address: {
+      textAlign: 'center',
+      width: '50%',
+      boxSizing: 'border-box',
       padding: '24px 40px',
-    },
-    map__address_dd: {
-      marginBottom: '16px',
+      '@media (max-width: 800px)': {
+        width: '100%',
+      },
+    } as any,
+    map__address_table: {
+      width: '100%',
+      borderCollapse: 'collapse',
+    } as React.CSSProperties,
+    map__address_th: {
+      padding: '16px',
+      border: '1px solid #eee',
+      backgroundColor: '#fafafa',
+    } as React.CSSProperties,
+    map__address_td: {
+      textAlign: 'left',
+      padding: '16px',
+      border: '1px solid #eee',
+      backgroundColor: '#fff',
+    } as React.CSSProperties,
+    map__ul: {
+      margin: 0,
     },
   };
   return (
@@ -32,41 +53,42 @@ export default function Map() {
         css={css(style.map__googlemap)}
       />
       <div css={css(style.map__address)}>
-        <p style={{ fontSize: '20px' }}>
+        <p style={{ fontSize: '20px', margin: '0 16px 16px' }}>
           <strong>ハワイ移民資料館 仁保島村（にほじまむら）</strong>
         </p>
-        <dl>
-          <dt>
-            <b>住所</b>
-          </dt>
-          <dd css={css(style.map__address_dd)}>〒734-0026 広島県広島市南区仁保3-17-6</dd>
-          <dt>
-            <b>連絡先</b>
-          </dt>
-          <dd css={css(style.map__address_dd)}>
-            <ul>
-              <li>
-                <a href="tel:082-286-6331">082-286-6331</a>（電話 / FAX）
-              </li>
-              <li>
-                <a href="tel:090-3745-6250">090-3745-6250</a>（携帯電話）
-              </li>
-              <li>
-                <a href="mailto:info@hawaiiniho.com">info@hawaiiniho.com</a>（メール）
-              </li>
-            </ul>
-          </dd>
-          <dt>
-            <b>ご案内</b>
-          </dt>
-          <dd css={css(style.map__address_dd)}>
-            <p>私設資料館のため事前連絡を必ずお願いします。</p>
-            <ul>
-              <li>入館料: 無料</li>
-              <li>刊行物: 無料</li>
-            </ul>
-          </dd>
-        </dl>
+
+        <table style={style.map__address_table}>
+          <tr>
+            <th style={style.map__address_th}>住所</th>
+            <td style={style.map__address_td}>〒734-0026 広島県広島市南区仁保3-17-6</td>
+          </tr>
+          <tr>
+            <th style={style.map__address_th}>連絡先</th>
+            <td style={style.map__address_td}>
+              <ul css={css(style.map__ul)}>
+                <li>
+                  <a href="tel:082-286-6331">082-286-6331</a>（電話 / FAX）
+                </li>
+                <li>
+                  <a href="tel:090-3745-6250">090-3745-6250</a>（携帯電話）
+                </li>
+                <li>
+                  <a href="mailto:info@hawaiiniho.com">info@hawaiiniho.com</a>（メール）
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th style={style.map__address_th}>ご案内</th>
+            <td style={style.map__address_td}>
+              <p style={{ margin: 0 }}>私設資料館のため「事前連絡」を必ずお願いします。</p>
+              <ul css={css(style.map__ul)}>
+                <li>入館料: 無料</li>
+                <li>刊行物: 無料</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   );
