@@ -25,6 +25,28 @@ export default function Main() {
       margin: '0 auto',
     } as React.CSSProperties,
   };
+  React.useEffect(() => {
+    // Update the document title using the browser API
+    ($('.cb-fsss') as any).cbFullScreenSlideShow({
+      top: '0px',
+      height: '440px',
+      zindex: '100',
+      img: [
+        {
+          src: '/images/hawaiiniho2.jpg',
+        },
+        {
+          src: '/images/hawaiiniho4.jpg',
+        },
+        {
+          src: '/images/hawaiiniho3.jpg',
+        },
+        {
+          src: '/images/hawaiiniho1.jpg',
+        },
+      ],
+    });
+  });
   return (
     <>
       <div className="cb-fsss" style={{ textAlign: 'center' }}>
