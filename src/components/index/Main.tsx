@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Nav from './Nav';
-import 'jquery';
 
 export default function Main() {
   const style = {
@@ -32,29 +31,28 @@ export default function Main() {
     } as React.CSSProperties,
   };
   const el = React.useRef(null);
-  // React.useEffect(() => {
-  //   setTimeout(() => {
-  //     ($('.cb-fsss') as any).cbFullScreenSlideShow({
-  //       top: '0px',
-  //       height: '440px',
-  //       zindex: '100',
-  //       img: [
-  //         {
-  //           src: '/images/hawaiiniho2.jpg',
-  //         },
-  //         {
-  //           src: '/images/hawaiiniho4.jpg',
-  //         },
-  //         {
-  //           src: '/images/hawaiiniho3.jpg',
-  //         },
-  //         {
-  //           src: '/images/hawaiiniho1.jpg',
-  //         },
-  //       ],
-  //     });
-  //   }, 500);
-  // });
+
+  React.useEffect(() => {
+    ($('.cb-fsss') as any).cbFullScreenSlideShow({
+      top: '0px',
+      height: '440px',
+      zindex: '100',
+      img: [
+        {
+          src: '/images/hawaiiniho2.jpg',
+        },
+        {
+          src: '/images/hawaiiniho4.jpg',
+        },
+        {
+          src: '/images/hawaiiniho3.jpg',
+        },
+        {
+          src: '/images/hawaiiniho1.jpg',
+        },
+      ],
+    });
+  });
   return (
     <>
       <div className="cb-fsss" ref={el} style={style.slideShow}>
