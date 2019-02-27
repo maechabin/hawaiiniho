@@ -58,36 +58,38 @@ export default function Map() {
         </p>
 
         <table style={style.map__address_table}>
-          <tr>
-            <th style={style.map__address_th}>住所</th>
-            <td style={style.map__address_td}>〒734-0026 広島県広島市南区仁保3-17-6</td>
-          </tr>
-          <tr>
-            <th style={style.map__address_th}>連絡先</th>
-            <td style={style.map__address_td}>
-              <ul css={css(style.map__ul)}>
-                <li>
-                  <a href="tel:082-286-6331">082-286-6331</a>（電話 / FAX）
-                </li>
-                <li>
-                  <a href="tel:090-3745-6250">090-3745-6250</a>（携帯電話）
-                </li>
-                <li>
-                  <a href="mailto:info@hawaiiniho.com">info@hawaiiniho.com</a>（メール）
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <th style={style.map__address_th}>ご案内</th>
-            <td style={style.map__address_td}>
-              <p style={{ margin: 0 }}>私設資料館のため「事前連絡」を必ずお願いします。</p>
-              <ul css={css(style.map__ul)}>
-                <li>入館料: 無料</li>
-                <li>刊行物: 無料</li>
-              </ul>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th style={style.map__address_th}>住所</th>
+              <td style={style.map__address_td}>〒734-0026 広島県広島市南区仁保3-17-6</td>
+            </tr>
+            <tr>
+              <th style={style.map__address_th}>連絡先</th>
+              <td style={style.map__address_td}>
+                <ul css={css(style.map__ul)}>
+                  <li>
+                    <a href="tel:082-286-6331">082-286-6331</a>（電話 / FAX）
+                  </li>
+                  <li>
+                    <a href="tel:090-3745-6250">090-3745-6250</a>（携帯電話）
+                  </li>
+                  <li>
+                    <a href="mailto:info@hawaiiniho.com">info@hawaiiniho.com</a>（メール）
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th style={style.map__address_th}>ご案内</th>
+              <td style={style.map__address_td}>
+                <p style={{ margin: 0 }}>私設資料館のため「事前連絡」を必ずお願いします。</p>
+                <ul css={css(style.map__ul)}>
+                  <li>入館料: 無料</li>
+                  <li>刊行物: 無料</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
