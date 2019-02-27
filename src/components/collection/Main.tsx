@@ -73,6 +73,15 @@ export default function Main() {
       fontSize: '40px',
       textAlign: 'center',
     } as React.CSSProperties,
+    paragraph: {
+      color: '#333',
+      margin: '16px auto',
+      maxWidth: '880px',
+      fontSize: '22px',
+      lineHeight: 1.8,
+      textAlign: 'justify',
+      marginBottom: '32px',
+    } as React.CSSProperties,
     exhibit: {
       textAlign: 'center',
       margin: '32px auto',
@@ -99,6 +108,10 @@ export default function Main() {
   return (
     <main style={style.main}>
       <h2 style={style.title}>展示物のご紹介</h2>
+      <p style={style.paragraph}>展示資料の多くは、ハワイ移民が持ち帰ったものを中心にして、広島からの移民がなぜ多いのか、ハワイでの生活ぶりはどうであったか、資料に語らせる手法をとっています。資料の中には、ハワイやアメリカの資料館でも見ることができないものもあり、解説は移民当事者の視点を大切にしております。</p>
+      <p style={style.paragraph}>移民の歴史は個人のプライバシーに関するものが多く、ホームページでは全部を公開することができません。このようなことから、館内での解説や説明もその目的や背景によって対応を変えていきます。</p>
+      <p style={style.paragraph}>”語り部”と共にあるというものも当資料館の最大の特色です。</p>
+      <p style={style.paragraph}>ハワイの縁故者や移民研究家・教育関係者の人たちからの寄贈や、当資料館が収集した所蔵品資料については、ニュースレターの発刊などにより順次公開の予定であります。</p>
 
       <div style={style.exhibit}>{exibit}</div>
     </main>
