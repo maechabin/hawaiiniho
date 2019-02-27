@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
 export default function HTML(props) {
+  const head = Helmet.rewind();
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -9,6 +11,7 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {props.headComponents}
+        {head.title.toComponent()}
         <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer />
         <script src="/js/cb-fsss.min.js" defer />
       </head>
