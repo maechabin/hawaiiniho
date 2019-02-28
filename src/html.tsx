@@ -1,8 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
 import Helmet from 'react-helmet';
 
-export default function HTML(props) {
+interface Props {
+  htmlAttributes: any;
+  headComponents: any;
+  bodyAttributes: any;
+  preBodyComponents: any;
+  body: string;
+  postBodyComponents: any;
+}
+
+export default function HTML(props: Props) {
   const head = Helmet.rewind();
   return (
     <html {...props.htmlAttributes}>
@@ -12,7 +20,7 @@ export default function HTML(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {props.headComponents}
         {head.title.toComponent()}
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer />
+        <script src="/js/jquery.js" defer />
         <script src="/js/cb-fsss.min.js" defer />
       </head>
       <body {...props.bodyAttributes}>
@@ -26,12 +34,3 @@ export default function HTML(props) {
     </html>
   );
 }
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-};
