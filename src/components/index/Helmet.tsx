@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { STYLE } from '../common/constant';
 import { withPrefix } from 'gatsby';
 
-export default () => {
+export default function Head(): JSX.Element {
   return (
     <>
       <Helmet>
@@ -23,4 +23,4 @@ export default () => {
       </Helmet>
     </>
   );
-};
+}

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { STYLE } from '../common/constant';
 
-export default () => {
+export default function Head(): JSX.Element {
   return (
     <Helmet>
       <meta charSet="utf-8" />
@@ -19,4 +19,4 @@ export default () => {
       <style>{STYLE}</style>
     </Helmet>
   );
-};
+}

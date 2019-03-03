@@ -4,7 +4,7 @@ import Breadcrumb from '../components/layout/Breadcrumb';
 import Main from '../components/visit/Main';
 import Helmet from '../components/visit/Helmet';
 
-export default () => {
+export default function Visit(): JSX.Element {
   return (
     <>
       <Helmet />
@@ -14,4 +14,4 @@ export default () => {
       </Layout>
     </>
   );
-};
+}
