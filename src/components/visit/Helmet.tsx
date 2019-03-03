@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import { STYLE } from '../common/constant';
+import { STYLE } from '../../utils/constant';
 
 export default function Head(): JSX.Element {
   return (
