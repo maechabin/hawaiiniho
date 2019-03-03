@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default function Main() {
+export default function Main(): JSX.Element {
   const style = {
     main: {
       margin: '40px 0',

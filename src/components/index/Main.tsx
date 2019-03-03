@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Nav from './Nav';
 
-export default function Main() {
+export default function Main(): JSX.Element {
   const style = {
     slideShow: {
       textAlign: 'center',

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { css } from '@emotion/core';
 
-export default function Main() {
+export default function Main(): JSX.Element {
   const exhibis = [
     {
       url: '/images/collections/dsc_2574.jpg',

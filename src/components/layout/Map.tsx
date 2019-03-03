@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { css } from '@emotion/core';
 
-export default function Map() {
+export default function Map(): JSX.Element {
   const style = {
     map: {
       display: 'flex',

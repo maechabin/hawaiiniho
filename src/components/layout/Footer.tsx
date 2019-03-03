@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   const style = {
     footer: {
       padding: '80px',

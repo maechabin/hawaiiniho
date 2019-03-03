@@ -10,7 +10,7 @@ interface Props {
   postBodyComponents: any;
 }
 
-export default function HTML(props: Props) {
+export default function HTML(props: Props): JSX.Element {
   const head = Helmet.rewind();
   return (
     <html {...props.htmlAttributes}>

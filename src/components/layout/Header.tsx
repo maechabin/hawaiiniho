@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { withPrefix } from 'gatsby';
 
-export default function Header() {
+export default function Header(): JSX.Element {
   const style = {
     header: {
       position: 'relative',

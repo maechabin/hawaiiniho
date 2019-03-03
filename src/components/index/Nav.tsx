@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { css } from '@emotion/core';
 
-export default function Nav() {
+export default function Nav(): JSX.Element {
   const pages = [
     { name: '資料館について', path: '/about' },
     { name: '展示物のご紹介', path: '/collection' },
