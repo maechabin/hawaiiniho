@@ -63,6 +63,7 @@ export default function Main(): JSX.Element {
         </p>
       </div>
 
+      {/*
       <div style={style.chapter}>
         <h3 style={style.title}>スタッフ紹介</h3>
         <p style={{ ...style.paragraph, textAlign: 'center', marginBottom: 0 }}>
@@ -76,6 +77,7 @@ export default function Main(): JSX.Element {
           <a href="mailto:oyatsu@hawaiiniho.com">大谷津仁（おおやつひとし）</a>
         </p>
       </div>
+      */}
     </main>
   );
 }
