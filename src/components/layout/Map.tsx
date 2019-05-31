@@ -12,7 +12,8 @@ export default function Map(): JSX.Element {
     },
     map__googlemap: {
       width: '50%',
-      height: '400px',
+      height: 'inherit',
+      minHeight: '400px',
       border: 0,
       '@media (max-width: 800px)': {
         width: '100%',
@@ -84,9 +85,31 @@ export default function Map(): JSX.Element {
               <td style={style.map__address_td}>
                 <p style={{ margin: 0 }}>私設資料館のため「事前連絡」を必ずお願いします。</p>
                 <ul css={css(style.map__ul)}>
-                  <li>入館料: 無料</li>
-                  <li>刊行物: 無料</li>
+                  <li>
+                    入館料: <b>無料</b>
+                  </li>
+                  <li>
+                    刊行物: <b>無料</b>
+                  </li>
                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <th style={style.map__address_th}>アクセス方法</th>
+              <td style={style.map__address_td}>
+                <ol css={css(style.map__ul)}>
+                  <li>
+                    広島駅南口を出ましたら、 向かって右奥のバス乗り場4番から
+                    <a href="http://hiroden.co.jp/bus/route/c-4.html" target="_blanek">
+                      「広島電鉄バス4-1 広島駅→仁保車庫行き」
+                    </a>
+                    にお乗りください（乗車時間約23分 / 運賃230円）。
+                  </li>
+                  <li>
+                    <strong>「上柞木（かみほうそぎ）」</strong>
+                    で下車し、山に向かって徒歩3分のところに当館がございます。
+                  </li>
+                </ol>
               </td>
             </tr>
           </tbody>
