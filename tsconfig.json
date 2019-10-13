@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
+    "esModuleInterop": true,
     "sourceMap": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
@@ -9,7 +10,13 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "react",
-    "lib": ["dom", "es2015", "es2017"]
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017"
+    ]
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "./src/**/*"
+  ]
 }

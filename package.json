@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.21",
+    "@types/firebase": "^3.2.1",
     "@types/jquery": "^3.3.29",
     "@types/react": "^16.9.5",
     "@types/react-dom": "^16.9.1",
@@ -24,6 +25,7 @@
     "gatsby-plugin-emotion": "^4.1.10",
     "gatsby-plugin-google-analytics": "^2.1.21",
     "gatsby-plugin-typescript": "^2.1.12",
+    "gatsby-theme-firebase": "^1.0.6",
     "jquery": "^3.3.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
