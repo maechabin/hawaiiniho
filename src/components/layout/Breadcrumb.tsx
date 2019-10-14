@@ -15,13 +15,13 @@ export default function Bredcrumb(props: { title: string }): JSX.Element {
   };
   return (
     <p style={style.breadcrumb}>
-      <span itemScope itemType="http://data-vocabulary.org/Breadcrumb">
+      <span itemScope itemType="https://data-vocabulary.org/Breadcrumb">
         <Link to="/" itemProp="url">
           仁保島村トップページ
         </Link>
       </span>
       <span style={style.next}>></span>
-      <b itemScope itemType="http://data-vocabulary.org/Breadcrumb">
+      <b itemScope itemType="https://data-vocabulary.org/Breadcrumb">
         {title}
       </b>
     </p>

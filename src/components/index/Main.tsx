@@ -52,7 +52,7 @@ export default function Main(): JSX.Element {
         },
       ],
     });
-  });
+  }, []);
   return (
     <>
       <div className="cb-fsss" ref={el} style={style.slideShow}>
