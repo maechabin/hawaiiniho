@@ -6,8 +6,8 @@ export default function Nav(): JSX.Element {
   const pages = [
     { name: '資料館について', path: '/about' },
     { name: '展示物のご紹介', path: '/collection' },
+    { name: '来館者の声', path: '/comment' },
     { name: 'ご利用案内', path: '/visit' },
-    { name: '当資料館からのお願い', path: '/give' },
     { name: 'お問い合わせ', path: '/contact' },
   ];
   const style = {
