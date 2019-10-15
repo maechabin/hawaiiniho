@@ -3,7 +3,6 @@ import { css } from '@emotion/core';
 // import firebase from 'firebase/app';
 // import 'firebase/firestore';
 import { firestore, useFirestoreDoc, useFirestoreQuery } from "gatsby-theme-firebase";
-import { cpuCoreCount } from 'gatsby-core-utils';
 
 interface Comment {
   id: string;
@@ -20,10 +19,6 @@ export default function Main(): JSX.Element {
   const [comments, isLoading] = useFirestoreQuery(
     firestore.collection('comments').orderBy('createdAt', 'desc'),
   );
-
-  React.useEffect(() => {
-    console.log(comments);
-  });
 
   const style = {
     main: {
@@ -45,26 +40,27 @@ export default function Main(): JSX.Element {
       padding: '0 32px',
     } as React.CSSProperties,
     ul: {
+      maxWidth: '880px',
+      margin: '0 auto',
       listStyleType: 'none',
-      padding: '16px 32px',
+      padding: '16px 0',
+      borderTop: '1px solid #aaa'
     } as React.CSSProperties,
     li: {
-
+      padding: '64px 32px',
+      borderBottom: '1px solid #aaa'
     } as React.CSSProperties,
     name: {
-      maxWidth: '880px',
-      margin: '16px auto',
+      margin: '0 auto 32px',
       fontSize: '20px',
     } as React.CSSProperties,
     comment: {
-      maxWidth: '880px',
       fontSize: '18px',
-      margin: '0 auto 64px',
+      margin: '0 auto',
       whiteSpace: 'pre-wrap',
       lineHeight: 2.2,
       textAlign: 'justify',
-      paddingBottom: '64px',
-      borderBottom: '1px solid #aaa'
+
     } as React.CSSProperties,
     figure: {
       margin: '16px auto 0',
@@ -89,7 +85,7 @@ export default function Main(): JSX.Element {
   return (
     <main style={style.main}>
       <h2 style={style.title}>来館者の声</h2>
-      <p style={style.paragraph}>当館「仁保島村」へ来館くださったお客さまからたくさんの声をいただいております。誠にありがとうございます。スタッフ一同励みとなっております。いただいたコメントの中から一部ご紹介いたします。</p>
+      <p style={style.paragraph}>当資料館「仁保島村」へ来館くださったお客さまからたくさんの声をいただいております。大変励みとなっております。誠にありがとうございます。いただいたコメントの中から一部ご紹介いたします。</p>
 
       <div>
         <ul style={style.ul}>
