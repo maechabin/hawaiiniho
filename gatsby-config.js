@@ -14,5 +14,11 @@ module.exports = {
         trackingId: 'UA-127426346-1',
       },
     },
+    {
+      resolve: `gatsby-plugin-polyfill-io`,
+      options: {
+        features: [`fetch`]
+      },
+    },
   ],
 };
