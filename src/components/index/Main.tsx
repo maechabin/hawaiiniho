@@ -29,6 +29,21 @@ export default function Main(): JSX.Element {
       fontSize: '18px',
       margin: '0 auto',
     } as React.CSSProperties,
+    news: {
+      padding: '32px',
+      maxWidth: '800px',
+      width: '100%',
+      margin: '0 auto',
+      boxSizing: 'border-box',
+      fontSize: '20px',
+      lineHeight: 1.8,
+      textAlign: 'justify',
+    } as React.CSSProperties,
+    newsImage: {
+      border: '1px solid #222',
+      maxWidth: '320px',
+      width: '100%',
+    } as React.CSSProperties,
   };
   const el = React.useRef(null);
 
@@ -69,6 +84,14 @@ export default function Main(): JSX.Element {
         </div>
       </div>
       <Nav />
+      <div style={style.news}>
+        <h3 style={{ textAlign: 'center' }}>ニュース</h3>
+        <p><a href="/pdf/nihoshima_21.pdf" target="_blank">『にほしま第21号 特集「ねじ曲げられた移民という表現～その差別と偏見と戦う」』</a>ができました。</p>
+        <figure style={{ textAlign: 'center' }}>
+          <a href="/pdf/nihoshima_21.pdf" target="_blank"><img src="/images/nihoshima_21.png" width="300" alt="にほしま第21号" style={style.newsImage} /></a>
+        </figure>
+      </div>
+
     </>
   );
 }
