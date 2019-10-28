@@ -40,9 +40,10 @@ export default function Main(): JSX.Element {
       textAlign: 'justify',
     } as React.CSSProperties,
     newsImage: {
-      border: '1px solid #222',
-      maxWidth: '320px',
+      border: '2px solid #222',
+      maxWidth: '400px',
       width: '100%',
+      verticalAlign: 'middle',
     } as React.CSSProperties,
     report: {
       padding: '0 32px 32px',
@@ -96,19 +97,20 @@ export default function Main(): JSX.Element {
       <Nav />
       <div style={style.news}>
         <h3 style={{ textAlign: 'center' }}>ニュース</h3>
-        <p><a href="/pdf/nihoshima_21.pdf" target="_blank">『にほしま第21号 特集「ねじ曲げられた移民という表現～その差別と偏見と戦う」』</a>ができました。</p>
+        <p><a href="/pdf/nihoshima_21.pdf" target="_blank">『にほしま第21号 特集「ねじ曲げられた移民という表現～その差別と偏見と闘う」』</a>ができました。</p>
         <figure style={{ textAlign: 'center' }}>
           <a href="/pdf/nihoshima_21.pdf" target="_blank"><img src="/images/nihoshima_21.png" width="300" alt="にほしま第21号" style={style.newsImage} /></a>
+          <figcaption style={{fontSize: '14px'}}>にほしま第21号（令和元年8月）</figcaption>
         </figure>
       </div>
 
       <div style={style.report}>
         <h3 style={{ textAlign: 'center' }}>活動報告</h3>
         <p style={{ textAlign: 'center' }}>2019年8月4日</p>
-        <p>館長 川﨑壽が山口県周防大島町の教育委員会・<a href="http://www.town.suo-oshima.lg.jp/syoukoukankou/hawaiishiryokan.html" target="_blank">日本ハワイ移民資料館</a>の招きにより講演しました。</p>
-        <p>題目は<strong>「知られざるハワイ移民史」</strong></p>
-        <p>先に<a href="https://www.jica.go.jp/jomm/" target="_blank">JICA横浜海外海外移住資料館</a>での講演と同名ですが、今回は移民の本場 周防大島町とあって、新たにご当地資料１０点を収集して披露。</p>
-        <p>伊藤博文、井上馨の山口県への想いを古文書から特別扱いとなった地租改正の秘話など内容は豊富でした！本人曰く今回は３０％増量のレベルアップだと申しております。</p>
+        <p>館長 川﨑壽が山口県周防大島町の教育委員会・<a href="https://www.town.suo-oshima.lg.jp/event/evt3161.html" target="_blank">日本ハワイ移民資料館の招きにより講演しました</a>。</p>
+        <p>題目は<strong>『知られざるハワイ移民史』</strong></p>
+        <p>先に<a href="https://www.jica.go.jp/jomm/" target="_blank">JICA横浜海外移住資料館</a>での講演と同名ですが、今回は移民の本場 周防大島町とあって、新たにご当地資料10点を収集して披露。</p>
+        <p>伊藤博文、井上馨の山口県への想いを古文書から特別扱いとなった地租改正の秘話など内容は豊富でした！本人曰く今回は30％増量のレベルアップだと申しております。</p>
         <p>反響は、周防大島町内広報<a href="/images/suouoshima21.jpg" target="_blank">『あそぶ・まなぶ・かたる 第27号』</a>に掲載されます。</p>
       </div>
     </>
