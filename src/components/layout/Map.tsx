@@ -99,7 +99,7 @@ export default function Map(): JSX.Element {
               <td style={style.map__address_td}>
                 <ol css={css(style.map__ul)}>
                   <li>
-                    広島駅南口を出ましたら、 向かって右奥のバス乗り場4番から
+                    広島駅南口を出ましたら、向かって右奥のバス乗り場4番から
                     <a href="http://hiroden.co.jp/bus/route/c-4.html" target="_blanek">
                       「広島電鉄バス4-1 広島駅→仁保車庫行き」
                     </a>
