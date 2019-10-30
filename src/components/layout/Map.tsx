@@ -99,8 +99,13 @@ export default function Map(): JSX.Element {
               <td style={style.map__address_td}>
                 <ol css={css(style.map__ul)}>
                   <li>
+<<<<<<< HEAD
                     広島駅南口を出ましたら、向かって右奥のバス乗り場4番から
                     <a href="http://hiroden.co.jp/bus/route/c-4.html" target="_blanek">
+=======
+                    広島駅南口を出ましたら、 向かって右奥のバス乗り場4番から
+                    <a href="https://hiroden.co.jp/bus/route/c-4.html" target="_blanek">
+>>>>>>> refs/remotes/origin/master
                       「広島電鉄バス4-1 広島駅→仁保車庫行き」
                     </a>
                     にお乗りください（乗車時間約23分 / 運賃230円）。

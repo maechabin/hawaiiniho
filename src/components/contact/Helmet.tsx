@@ -16,6 +16,7 @@ export default function Head(): JSX.Element {
         name="keywords"
         content="仁保島村（にほじまむら）, 移民資料館, ハワイ移民, 広島県広島市, nihojimamura"
       />
+      <link rel="canonical" href="https://hawaiiniho.com/contact/" />
       <style>{STYLE}</style>
     </Helmet>
   );
