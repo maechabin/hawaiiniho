@@ -45,7 +45,14 @@ export default function Map(): JSX.Element {
     } as React.CSSProperties,
     map__ul: {
       margin: 0,
-    },
+      padding: 0,
+      textIndent: '1em',
+    } as React.CSSProperties,
+    map__ol: {
+      margin: 0,
+      padding: '0 0 0 1em',
+      textAlign: 'justify',
+    } as React.CSSProperties,
   };
   return (
     <div css={css(style.map)}>
@@ -67,7 +74,7 @@ export default function Map(): JSX.Element {
             <tr>
               <th style={style.map__address_th}>連絡先</th>
               <td style={style.map__address_td}>
-                <ul css={css(style.map__ul)}>
+                <ul style={style.map__ul}>
                   <li>
                     <a href="tel:082-286-6331">082-286-6331</a>（電話 / FAX）
                   </li>
@@ -84,7 +91,7 @@ export default function Map(): JSX.Element {
               <th style={style.map__address_th}>ご案内</th>
               <td style={style.map__address_td}>
                 <p style={{ margin: 0 }}>私設資料館のため「事前連絡」を必ずお願いします。</p>
-                <ul css={css(style.map__ul)}>
+                <ul style={style.map__ul}>
                   <li>
                     入館料: <b>無料</b>
                   </li>
@@ -97,7 +104,7 @@ export default function Map(): JSX.Element {
             <tr>
               <th style={style.map__address_th}>アクセス方法</th>
               <td style={style.map__address_td}>
-                <ol css={css(style.map__ul)}>
+                <ol style={style.map__ol}>
                   <li>
                     広島駅南口を出ましたら、向かって右奥のバス乗り場4番から
                     <a href="http://hiroden.co.jp/bus/route/c-4.html" target="_blanek">
