@@ -18,6 +18,7 @@ export default function HTML(props: Props): JSX.Element {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         {props.headComponents}
         {head.title.toComponent()}
         <script src="/js/jquery.js" defer />
