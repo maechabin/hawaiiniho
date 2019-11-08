@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf public && rm -rf .cache && gatsby build",
+    "build": "rm -rf public && rm -rf .cache && NODE_ENV=production gatsby build",
     "now-build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
