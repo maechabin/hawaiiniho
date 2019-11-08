@@ -107,9 +107,9 @@ export default function Main(): JSX.Element {
       <div style={style.report}>
         <h3 style={{ textAlign: 'center' }}>活動報告</h3>
         <p style={{ textAlign: 'center' }}>2019年8月4日</p>
-        <p>館長 川﨑壽が山口県周防大島町の教育委員会・<a href="https://www.town.suo-oshima.lg.jp/event/evt3161.html" target="_blank">日本ハワイ移民資料館の招きにより講演しました</a>。</p>
+        <p>館長 川﨑壽が<a href="https://www.town.suo-oshima.lg.jp/event/evt3161.html" target="_blank">山口県周防大島町の教育委員会・日本ハワイ移民資料館の招きにより講演しました</a>。</p>
         <p>題目は<strong>『知られざるハワイ移民史』</strong></p>
-        <p>先に<a href="https://www.jica.go.jp/jomm/" target="_blank">JICA横浜海外移住資料館</a>での講演と同名ですが、今回は移民の本場 周防大島町とあって、新たにご当地資料10点を収集して披露。</p>
+        <p>先のJICA横浜 海外移住資料館での講演と同名ですが、今回は移民の本場 周防大島町とあって、新たにご当地資料10点を収集して披露。</p>
         <p>伊藤博文、井上馨の山口県への想いを古文書から特別扱いとなった地租改正の秘話など内容は豊富でした！本人曰く今回は30％増量のレベルアップだと申しております。</p>
         <p>反響は、周防大島町内広報<a href="/images/suouoshima21.jpg" target="_blank">『あそぶ・まなぶ・かたる 第27号』</a>に掲載されます。</p>
       </div>
