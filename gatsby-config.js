@@ -20,5 +20,19 @@ module.exports = {
         features: [`fetch`]
       },
     },
+    {
+      resolve: "gatsby-theme-firebase",
+      options: {
+        credentials: {
+          apiKey: '',
+          authDomain: '',
+          databaseURL: '',
+          projectId: '',
+          storageBucket: '',
+          messagingSenderId: '',
+          appId: '',
+        },
+      },
+    },
   ],
 };
