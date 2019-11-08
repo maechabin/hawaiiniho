@@ -155,7 +155,11 @@ export default function Main(): JSX.Element {
             原爆慰霊碑の碑文草案（現存する貴重な1枚）
           </strong>
           <p>
-            <img src="/images/collections/dsc_3225.jpg" width="320" alt="原爆慰霊碑の碑文草案" />
+            <img
+              src="/images/collections/dsc_3225.jpg"
+              width="320"
+              alt="雑賀忠義による原爆慰霊碑の碑文草案"
+            />
             <img src="/images/collections/dsc_3227.jpg" width="320" alt="原爆慰霊碑の碑文" />
           </p>
           <p style={{ fontSize: '20px' }}>
