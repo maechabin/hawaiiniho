@@ -114,7 +114,7 @@ export default function Main(): JSX.Element {
   };
   const exibit = exhibis.map(exhibit => {
     return (
-      <a href={exhibit.url} target="_blank" key={exhibit.url}>
+      <a href={exhibit.url} target="_blank" rel="noopener" key={exhibit.url}>
         <img src={exhibit.thumb} alt={exhibit.alt} css={css(style.exhibit__img)} />
       </a>
     );

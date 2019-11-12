@@ -57,6 +57,7 @@ export default function Map(): JSX.Element {
   return (
     <div css={css(style.map)}>
       <iframe
+        title="ハワイ移民資料館「仁保島村」周辺のアクセスマップ"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3293.3097276786298!2d132.49487021522333!3d34.36804188052122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa1c6cce7e7fd%3A0x1db825fa7376644b!2z44CSNzM0LTAwMjYg5bqD5bO255yM5bqD5bO25biC5Y2X5Yy65LuB5L-d77yT5LiB55uu77yR77yX4oiS77yW!5e0!3m2!1sja!2sjp!4v1539792629623"
         css={css(style.map__googlemap)}
       />

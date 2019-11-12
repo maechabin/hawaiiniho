@@ -13,7 +13,7 @@ interface Props {
 export default function HTML(props: Props): JSX.Element {
   const head = Helmet.rewind();
   return (
-    <html {...props.htmlAttributes}>
+    <html {...props.htmlAttributes} lang="ja">
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

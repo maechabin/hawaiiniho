@@ -8,15 +8,15 @@ export default function Head(): JSX.Element {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>ハワイ移民資料館「仁保島村（にほじまむら）」- 広島県広島市</title>
+        <title>ハワイ移民資料館「仁保島村（にほじまむら）」- 広島市南区</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="仁保島村（にほじまむら）は、広島県広島市にある私設ハワイ移民資料館（博物館）です。当館は、館長の川崎壽（かわさきひろし）によって平成7年（1995年）に旧仁保島村に開館したハワイ移民に関する資料館で、館長が自ら長年かけて集めた日本からハワイに移住した移民に関する資料を展示しています。"
+          content="ハワイ移民資料館「仁保島村（にほじまむら）」は、館長の川崎壽（かわさきひろし）によって平成7年（1995年）に広島県広島市の旧仁保島村に開館したハワイ移民に関する私設資料館（博物館）です。館長が自ら長年かけて集めた日本からハワイに移住した移民に関する資料を展示しています。"
         />
         <meta
           name="keywords"
-          content="仁保島村（にほじまむら）, 移民資料館, ハワイ移民, 広島県広島市, nihojimamura"
+          content="仁保島村（にほじまむら）, ハワイ移民資料館, ハワイ移民, 広島県広島市, nihojimamura"
         />
         <link rel="canonical" href="https://hawaiiniho.com" />
         <style>{STYLE}</style>
