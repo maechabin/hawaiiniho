@@ -17,7 +17,7 @@ export default function Footer(): JSX.Element {
   return (
     <footer style={style.footer}>
       <address style={style.copy}>
-        &copy; 1997-2019
+        &copy; 1997-{new Date().getFullYear()}
         <Link to="/" style={{ color: '#fff', marginLeft: '8px' }}>
           <img
             style={{ verticalAlign: 'top' }}

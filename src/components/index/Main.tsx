@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+
 import Nav from './Nav';
 
 export default function Main(): JSX.Element {
@@ -41,7 +43,7 @@ export default function Main(): JSX.Element {
     } as React.CSSProperties,
     newsImage: {
       border: '2px solid #222',
-      maxWidth: '400px',
+      maxWidth: '450px',
       width: '100%',
       verticalAlign: 'middle',
     } as React.CSSProperties,
@@ -97,21 +99,59 @@ export default function Main(): JSX.Element {
       <Nav />
       <div style={style.news}>
         <h3 style={{ textAlign: 'center' }}>ニュース</h3>
-        <p><a href="/pdf/nihoshima_21.pdf" target="_blank" rel="noopener">『にほしま第21号 特集「ねじ曲げられた移民という表現～その差別と偏見と闘う」』</a>ができました。</p>
+        <p>
+          <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
+            『にほしま第22号 ザ・ビッグアイランド柳行李（やなぎこうり）を訪ねて』
+          </a>
+          ができました。
+        </p>
         <figure style={{ textAlign: 'center' }}>
-          <a href="/pdf/nihoshima_21.pdf" target="_blank" rel="noopener"><img src="/images/nihoshima_21.png" width="300" alt="にほしま第21号" style={style.newsImage} /></a>
-          <figcaption style={{ fontSize: '14px' }}>にほしま第21号（令和元年8月）</figcaption>
+          <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/images/nihoshima_22.png"
+              width="450"
+              alt="『にほしま第22号 ザ・ビッグアイランド柳行李を訪ねて』"
+              style={style.newsImage}
+            />
+          </a>
+          <figcaption style={{ fontSize: '14px' }}>にほしま第22号（令和2年2月）</figcaption>
         </figure>
+
+        <p style={{ fontSize: '16px', textAlign: 'center' }}>
+          <Link to="/nihoshima/">『にほしま』のバックナンバーを見る</Link>
+        </p>
       </div>
 
       <div style={style.report}>
         <h3 style={{ textAlign: 'center' }}>活動報告</h3>
         <p style={{ textAlign: 'center' }}>2019年8月4日</p>
-        <p>館長 川﨑壽が<a href="https://www.town.suo-oshima.lg.jp/event/evt3161.html" target="_blank" rel="noopener">山口県周防大島町の教育委員会・日本ハワイ移民資料館の招きにより講演しました</a>。</p>
-        <p>題目は<strong>『知られざるハワイ移民史』</strong></p>
-        <p>先のJICA横浜 海外移住資料館での講演と同名ですが、今回は移民の本場 周防大島町とあって、新たにご当地資料10点を収集して披露。</p>
-        <p>伊藤博文、井上馨の山口県への想いを古文書から特別扱いとなった地租改正の秘話など内容は豊富でした！本人曰く今回は30％増量のレベルアップだと申しております。</p>
-        <p>反響は、周防大島町内広報<a href="/images/suouoshima21.jpg" target="_blank" rel="noopener">『あそぶ・まなぶ・かたる 第27号』</a>に掲載されました。</p>
+        <p>
+          館長 川﨑壽が
+          <a
+            href="https://www.town.suo-oshima.lg.jp/event/evt3161.html"
+            target="_blank"
+            rel="noopener">
+            山口県周防大島町の教育委員会・日本ハワイ移民資料館の招きにより講演しました
+          </a>
+          。
+        </p>
+        <p>
+          題目は<strong>『知られざるハワイ移民史』</strong>
+        </p>
+        <p>
+          先のJICA横浜 海外移住資料館での講演と同名ですが、今回は移民の本場
+          周防大島町とあって、新たにご当地資料10点を収集して披露。
+        </p>
+        <p>
+          伊藤博文、井上馨の山口県への想いを古文書から特別扱いとなった地租改正の秘話など内容は豊富でした！本人曰く今回は30％増量のレベルアップだと申しております。
+        </p>
+        <p>
+          反響は、周防大島町内広報
+          <a href="/images/suouoshima21.jpg" target="_blank" rel="noopener">
+            『あそぶ・まなぶ・かたる 第27号』
+          </a>
+          に掲載されました。
+        </p>
       </div>
     </>
   );
