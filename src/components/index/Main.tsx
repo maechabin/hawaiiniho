@@ -100,21 +100,24 @@ export default function Main(): JSX.Element {
       <div style={style.news}>
         <h3 style={{ textAlign: 'center' }}>ニュース</h3>
         <p>
-          <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
-            『にほしま第22号 ザ・ビッグアイランド柳行李（やなぎこうり）を訪ねて』
+          2020年5月に『にほしま』最新号となる
+          <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
+            『にほしま第23号 その昔、ホノルルは水田だった ハワイ米物語』
           </a>
-          ができました。
+          を発刊しました。ぜひお読みください。
         </p>
         <figure style={{ textAlign: 'center' }}>
-          <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
             <img
-              src="/images/nihoshima_22.png"
+              src="/images/nihoshima_23.png"
               width="450"
-              alt="『にほしま第22号 ザ・ビッグアイランド柳行李を訪ねて』"
+              alt="『にほしま第23号 その昔、ホノルルは水田だった ハワイ米物語』"
               style={style.newsImage}
             />
           </a>
-          <figcaption style={{ fontSize: '14px' }}>にほしま第22号（令和2年2月）</figcaption>
+          <figcaption style={{ fontSize: '14px' }}>
+            にほしま第23号（令和2年5月）（PDFファイル）
+          </figcaption>
         </figure>
 
         <p style={{ fontSize: '16px', textAlign: 'center' }}>

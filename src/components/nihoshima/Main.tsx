@@ -35,6 +35,21 @@ export default function Main(): JSX.Element {
         当資料館「仁保島村」では、館内報『にほしま』を発行しています。これまでに発行したバックナンバーをご覧ください（画像をクリックするとPDFファイルが開きます）。
       </p>
       <figure style={{ textAlign: 'center' }}>
+        <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/images/nihoshima_23.png"
+            width="450"
+            alt="『にほしま第23号 その昔、ホノルルは水田だった ハワイ米物語』"
+            style={style.newsImage}
+          />
+        </a>
+        <figcaption style={{ fontSize: '14px' }}>
+          にほしま第23号（令和2年5月）
+          <br />
+          「その昔、ホノルルは水田だった ハワイ米物語」
+        </figcaption>
+      </figure>
+      <figure style={{ textAlign: 'center' }}>
         <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
           <img
             src="/images/nihoshima_22.png"
