@@ -47,6 +47,13 @@ export default function Main(): JSX.Element {
       width: '100%',
       verticalAlign: 'middle',
     } as React.CSSProperties,
+    newsImageBook: {
+      border: '2px solid #222',
+      maxWidth: '240px',
+      width: '100%',
+      verticalAlign: 'middle',
+      margin: '2px',
+    } as React.CSSProperties,
     report: {
       padding: '0 32px 32px',
       maxWidth: '800px',
@@ -56,6 +63,24 @@ export default function Main(): JSX.Element {
       fontSize: '20px',
       lineHeight: 1.8,
       textAlign: 'justify',
+    } as React.CSSProperties,
+    hr: {
+      margin: '48px auto',
+      width: '280px',
+    } as React.CSSProperties,
+    button: {
+      display: 'block',
+      width: '240px',
+      margin: '0 auto',
+      borderRadius: '4px',
+      padding: '8px 0',
+      fontSize: '18px',
+      fontWeight: 'bold',
+      color: '#fff',
+      backgroundColor: 'rgba(251,140,0 ,1)',
+      border: 'none',
+      cursor: 'pointer',
+      textDecoration: 'none',
     } as React.CSSProperties,
   };
   const el = React.useRef(null);
@@ -99,6 +124,51 @@ export default function Main(): JSX.Element {
       <Nav />
       <div style={style.news}>
         <h3 style={{ textAlign: 'center' }}>ニュース</h3>
+
+        <p>
+          2020年3月31日、仁保島村館長・川崎壽の著書<strong>『ハワイ日本人移民史』</strong>
+          が発刊されました。「移民は棄民ではありません」「貧乏だから移民したわけではありません」あくまでも史実に基づき刻明に記述しました。ぜひ、ご一読ください。
+        </p>
+        <figure style={{ textAlign: 'center' }}>
+          <a href="/images/hawaii_japan_history_2.jpg" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/images/hawaii_japan_history.jpg"
+              width="200"
+              alt="『ハワイ日本人移民史』の表紙"
+              style={style.newsImageBook}
+            />
+            <img
+              src="/images/hawaii_japan_history_2.jpg"
+              width="200"
+              alt="『ハワイ日本人移民史』の序"
+              style={style.newsImageBook}
+            />
+          </a>
+          <figcaption style={{ fontSize: '14px' }}>
+            <span>『ハワイ日本人移民史 1868-1952（明治元年－昭和二十七年）』</span>
+            <br />
+            （ハワイ移民資料館 仁保島村 / 2020年3月 / 247頁 / 4,180円）
+          </figcaption>
+        </figure>
+        <p>
+          本書をご購入される場合は、
+          {/* <a
+            href="https://www.amazon.co.jp/%E3%83%8F%E3%83%AF%E3%82%A4%E6%97%A5%E6%9C%AC%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8F%B2-%E3%83%8F%E3%83%AF%E3%82%A4%E7%A7%BB%E6%B0%91%E8%B3%87%E6%96%99%E9%A4%A8-%E4%BB%81%E4%BF%9D%E5%B3%B6%E6%9D%91/dp/4600004019"
+            target="_blank">
+            「Amazon.co.jp」からご注文くださいませ。
+          </a> */}
+          <a href="mailto:info@hawaiiniho.com">
+            メールにて購入希望の旨をご連絡くださいますようお願いいたします。
+          </a>
+        </p>
+
+        <div style={{ textAlign: 'center' }}>
+          <a style={style.button} href="mailto:info@hawaiiniho.com">
+            メールで購入希望する
+          </a>
+        </div>
+
+        <hr style={style.hr} />
         <p>
           2020年5月に『にほしま』最新号となる
           <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
