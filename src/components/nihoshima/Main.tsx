@@ -34,7 +34,7 @@ export default function Main(): JSX.Element {
       <p style={style.paragraph}>
         当資料館「仁保島村」では、館内報『にほしま』を発行しています。これまでに発行したバックナンバーをご覧ください（画像をクリックするとPDFファイルが開きます）。
       </p>
-      <figure style={{ textAlign: 'center' }}>
+      {/* <figure style={{ textAlign: 'center' }}>
         <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
           <img
             src="/images/nihoshima_23.png"
@@ -48,7 +48,7 @@ export default function Main(): JSX.Element {
           <br />
           「その昔、ホノルルは水田だった ハワイ米物語」
         </figcaption>
-      </figure>
+      </figure> */}
       <figure style={{ textAlign: 'center' }}>
         <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
           <img

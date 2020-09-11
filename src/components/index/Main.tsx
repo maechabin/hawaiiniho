@@ -127,29 +127,34 @@ export default function Main(): JSX.Element {
 
         <p>
           2020年3月31日、仁保島村館長・川崎壽の著書<strong>『ハワイ日本人移民史』</strong>
-          が発刊されました。「移民は棄民ではありません」「貧乏だから移民したわけではありません」あくまでも史実に基づき刻明に記述しました。ぜひ、ご一読ください。
+          を発刊しました。「移民は棄民ではありません」「貧乏だから移民したわけではありません」あくまでも史実に基づき刻明に記述しました。ぜひ、ご一読ください。
         </p>
         <figure style={{ textAlign: 'center' }}>
-          <a href="/images/hawaii_japan_history_2.jpg" target="_blank" rel="noopener noreferrer">
+          <Link to="/works/">
             <img
-              src="/images/hawaii_japan_history.jpg"
+              src="/images/works/hawaii_japan_history.jpg"
               width="200"
               alt="『ハワイ日本人移民史』の表紙"
               style={style.newsImageBook}
             />
             <img
-              src="/images/hawaii_japan_history_2.jpg"
+              src="/images/works/hawaii_japan_history_2.jpg"
               width="200"
               alt="『ハワイ日本人移民史』の序"
               style={style.newsImageBook}
             />
-          </a>
+          </Link>
           <figcaption style={{ fontSize: '14px' }}>
             <span>『ハワイ日本人移民史 1868-1952（明治元年－昭和二十七年）』</span>
             <br />
             （ハワイ移民資料館 仁保島村 / 2020年3月 / 247頁 / 4,180円）
           </figcaption>
         </figure>
+
+        <p style={{ fontSize: '16px', textAlign: 'center' }}>
+          <Link to="/works/">『ハワイ日本人移民史』の詳細を見る</Link>
+        </p>
+
         <p>
           本書をご購入される場合は、
           {/* <a
@@ -170,24 +175,21 @@ export default function Main(): JSX.Element {
 
         <hr style={style.hr} />
         <p>
-          2020年5月に『にほしま』最新号となる
-          <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
-            『にほしま第23号 その昔、ホノルルは水田だった ハワイ米物語』
+          <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
+            『にほしま第22号 ザ・ビッグアイランド柳行李（やなぎこうり）を訪ねて』
           </a>
           を発刊しました。ぜひお読みください。
         </p>
         <figure style={{ textAlign: 'center' }}>
-          <a href="/pdf/nihoshima_23.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/pdf/nihoshima_22.pdf" target="_blank" rel="noopener noreferrer">
             <img
-              src="/images/nihoshima_23.png"
+              src="/images/nihoshima_22.png"
               width="450"
-              alt="『にほしま第23号 その昔、ホノルルは水田だった ハワイ米物語』"
+              alt="『にほしま第22号 ザ・ビッグアイランド柳行李を訪ねて』"
               style={style.newsImage}
             />
           </a>
-          <figcaption style={{ fontSize: '14px' }}>
-            にほしま第23号（令和2年5月）（PDFファイル）
-          </figcaption>
+          <figcaption style={{ fontSize: '14px' }}>にほしま第22号（令和2年2月）（PDFファイル）</figcaption>
         </figure>
 
         <p style={{ fontSize: '16px', textAlign: 'center' }}>
