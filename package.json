@@ -21,7 +21,7 @@
     "@types/react-helmet": "^5.0.11",
     "cbfsss": "^0.3.9",
     "firebase": "^7.2.0",
-    "gatsby": "^2.15.36",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-emotion": "^4.1.10",
     "gatsby-plugin-google-analytics": "^2.1.21",
     "gatsby-plugin-polyfill-io": "^1.1.0",
